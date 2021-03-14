@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name='viewport' content='width=device-width,initial scale=1'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://kit.fontawesome.com/996973c893.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<style>
+		body{
+			margin: 0;
+			padding: 0;
+		}
+		#particles-js{
+			background-color: #007bff;
+		
+			height: 100vh;
+      position: relative;
+		}
+    #typed-js{
+      position: relative;
+    }
+        .logo{
+      width: 25px;
+      margin-bottom: 3px;
+      margin-right: 3px;
+
+    }
+
+    #name{
+      position: absolute;
+      text-align: center;
+      background-color: #007bff;
+      opacity: 0.7;
+      width: 100%;
+    }
+  
+    h1{
+      
+      font-size: 4.8rem;
+      
+    }
+    h2{
+      position: absolute;
+      margin: auto;
+      width: 100%;
+      text-align: center;
+      font-size: 2.3rem;
+      color: #f0edf7;
+
+    }
+	</style>
+</head>
+<body>
+	
+	<nav id="nav1" class="navbar navbar-expand-lg navbar-light bg-light" >
+	<a class="navbar-brand" href="#"><img class="logo" src="https://i.pinimg.com/600x315/d5/f3/40/d5f340a499c1392fe1d5392ab3cc2f0c.jpg">School's Name</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<div id="particles-js">
+  <div id="name" class="text-center">
+		<h1 class="text-center mt-5 ml-auto mr-auto">School Name</h1>
+    <h2 class="text-center text-dark"><h2><span class="type"></span></h2>
+  </div>
+
+ </div>
+ <script type="text/javascript" src="js/typed.js"></script>
+  <script type="text/javascript">
+    var typed = new Typed(".type", {
+        strings: [
+        "This is line 1",
+        "This is line 2",
+        "This is line 3",
+        ],
+        typeSpeed: 50,
+        backSpeed: 50,
+        smartBackspace: false,
+        loop: true // Default value
+    });
+  </script>
+
+	<script src="js/particles.js"></script>
+	<script src="js/app.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
