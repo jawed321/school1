@@ -11,16 +11,14 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <style>
     body{
-      margin: 0;
+      margin-top: 49px;
       padding: 0;
     }
     #particles-js{
       background-color: #007bff;
+      height: 50vh;
     
-      height: 100vh;
-      position: relative;
-    }
-    #typed-js{
+
       position: relative;
     }
         .logo{
@@ -46,7 +44,6 @@
     }
     h2{
       position: absolute;
-      position: relative;
       margin: auto;
       width: 100%;
       text-align: center;
@@ -55,8 +52,6 @@
 
     }
     #myChart{
-       position: absolute;
-      margin: auto;
       width: 100%;
       text-align: center;
       color: #f0edf7;
@@ -65,14 +60,17 @@
     @media all and (max-width: 663px)
     {
       #chart{
-        margin-top: 9%;
+        margin-top: 0%;
+      }
+      #particles-js{
+        height: 55vh;
       }
     }
   </style>
 </head>
 <body>
   
-  <nav id="nav1" class="navbar navbar-expand-lg navbar-light bg-light" >
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" >
   <a class="navbar-brand" href="#"><img class="logo" src="https://i.pinimg.com/600x315/d5/f3/40/d5f340a499c1392fe1d5392ab3cc2f0c.jpg">School's Name</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -103,20 +101,22 @@
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
   </div>
-</nav>
+  </nav>
 <div id="particles-js">
   <div id="name" class="text-center">
     <h1 class="text-center mt-5 ml-auto mr-auto">School Name</h1>
-    <h2 class="text-center text-dark"><h2><span class="type"></span></h2>
-   <div id="chart" class="container">
-    <div class="row">
-  <canvas id="myChart" height="75" width="100" class="col-md-5 col-sm-10 col-xs-12 col-lg-6 col-centered m-auto p-auto text-center"></canvas>
-  </div>
-</div>
-    
-  </div>
+    <h2 class="text-center text-dark"><span class="type"></span></h2>
+  
 
  </div>
+</div>
+<section class="bg-dark">
+  <div id="chart" class="container bg-dark" style="background-size: auto;">
+    <div class="row">
+  <canvas id="myChart" height="75" width="100" class="col-md-7 col-sm-10 col-xs-12 col-lg-6 col-centered m-auto p-auto text-center"></canvas>
+  </div>
+</div>
+</section>
 
  <script type="text/javascript" src="js/typed.js"></script>
   <script type="text/javascript">
@@ -135,7 +135,7 @@
     <script>
     let myChart=document.getElementById('myChart').getContext('2d');
     Chart.defaults.global.defaultFontSize=18;
-    Chart.defaults.global.defaultFontColor='#f0edf7';
+    Chart.defaults.global.defaultFontColor='#007bff';
     let kChart= new Chart(myChart, {
       type:'doughnut',
       data:{
@@ -182,6 +182,7 @@
 
   <script src="js/particles.js"></script>
   <script src="js/app.js"></script>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
